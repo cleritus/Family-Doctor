@@ -1,0 +1,140 @@
+main {
+  position: relative;
+  height: 870px;
+
+  @media(max-width:1024px) {
+    height: 100%;
+  }
+
+  .bg-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 65%;
+    width: 280px;
+    opacity: 0.8;
+    z-index: 0;
+
+    @media(max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  .bg-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 80%;
+    width: 15%;
+    opacity: 0.8;
+    z-index: -1;
+
+    @media(max-width: 1024px) {
+      width: 20%;
+      height: 100%;
+    }
+
+    @media(max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .bg-right-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 25%;
+    width: 25%;
+    opacity: 0.8;
+    z-index: -1;
+
+    @media(max-width: 768px) {
+      display: block;
+    }
+
+    @media(max-width: 540px) {
+      height: 20%;
+    }
+
+    @media(max-width: 400px) {
+      height: 15%;
+    }
+  }
+
+  .banner-area {
+    position: relative;
+    padding: 60px 0;
+
+    @media(max-width: 768px) {
+      padding: 20px 0 0 0;
+    }
+
+    .banner-content {
+      padding-top: 200px;
+
+      @media(max-width: 1024px) {
+        padding-top: 100px;
+      }
+
+      @media(max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    h1 {
+      font-size: 46px;
+      font-weight: bold;
+      line-height: 60px;
+      margin: 20px 0;
+      width: 560px;
+
+      @media(max-width: 1024px) {
+        width: 90%;
+      }
+
+      @media(max-width: 768px) {
+        text-align: center;
+        font-size: 36px;
+        line-height: 44px;
+        margin-top: 0;
+      }
+    }
+
+    p {
+      // font-size: 18px;
+      line-height: 28px;
+      margin: 30px 0 40px;
+      width: 540px;
+
+      @media(max-width: 1024px) {
+        width: 326px;
+      }
+
+      @media(max-width: 768px) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .hero-banner {
+      position: absolute;
+      top: 250px;
+      left: 50%;
+
+      img {
+        width: 100%;
+      }
+
+      @media(max-width: 1024px) {
+        top: 55%;
+      }
+
+      @media(max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+}

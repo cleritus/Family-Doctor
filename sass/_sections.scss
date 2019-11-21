@@ -1,0 +1,319 @@
+.title-wrap {
+  max-width: 550px;
+  margin: 0 auto 80px;
+  display: flex;
+  justify-content: center;
+
+  @media(max-width: 1024px) {
+    margin-bottom: 30px;
+  }
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 48px;
+  text-align: center;
+  width: 476px;
+
+  @media(max-width: 1024px) {
+    margin-top: 0;
+  }
+
+  @media(max-width: 768px) {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  @media(max-width: 480px) {
+    width: 80%;
+  }
+
+  span {
+    font-style: italic;
+    font-weight: normal;
+  }
+}
+
+// Rotated Background-color in section 2 (products) and 4 (contact)
+
+.bg-transform {
+  position: absolute;
+  top: 0;
+  left: -200px;
+  width: 200%;
+  height: 100%;
+  transform: rotate(-5deg);
+  background-color: #F8F9FF;
+  z-index: -1;
+}
+
+// SECTION 1 - FEATURES
+
+.s1-content-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  .feature-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .feature-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 140px;
+      width: 140px;
+      border-radius: 10px;
+      background-color: #FFFFFF;
+      box-shadow: 0 10px 35px 0 rgba(26, 55, 139, 0.1);
+    }
+
+    h4 {
+      height: 24px;
+      width: 192px;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 24px;
+      margin: 30px 0 20px;
+      text-align: center;
+    }
+
+    p {
+      height: 82px;
+      width: 310px;
+      margin: 0;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+    }
+  }
+}
+
+// SECTION 2 - PRODUCTS
+
+section.products {
+  position: relative;
+  margin-top: 100px;
+  padding: 100px 0 50px 0;
+
+  @media(max-width: 768px) {
+    margin-top: 0;
+    padding-bottom: 80px;
+  }
+
+  .article-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 190px 0;
+
+    @media(max-width: 1024px) {
+      flex-direction: column-reverse;
+      margin: 0 0 100px 0;
+    }
+
+    @media(max-width: 768px) {
+      margin: 0 0 80px 0;
+    }
+
+    .article-img {
+      @media(max-width: 768px) {
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .article-content {
+      width: 470px;
+      text-align: left;
+
+      @media(max-width:1024px) {
+        text-align: center;
+        max-width: 440px;
+        margin-bottom: 50px;
+      }
+
+      @media(max-width:768px) {
+        margin-bottom: 30px;
+      }
+
+      h3 {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 42px;
+
+        @media(max-width:768px) {
+          font-size: 26px;
+          line-height: 34px;
+          margin-top: 0;
+          margin: 0 auto;
+        }
+
+        @media(max-width:480px) {
+          width: 70%;
+          margin: 0px auto;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 28px;
+
+        @media(max-width:480px) {
+          width: 70%;
+          margin: 20px auto;
+        }
+
+        @media(max-width:360px) {
+          width: 50%;
+        }
+      }
+
+      ul {
+        li {
+          list-style: circle;
+        }
+      }
+
+      // a {
+      //   text-decoration: none;
+      //   color: $blue;
+      //   font-size: 14px;
+      //   font-weight: bold;
+      //   letter-spacing: 0.47px;
+      //   cursor: pointer;
+      //   border-bottom: 1px solid $grey;
+      // }
+    }
+  }
+
+  :nth-child(even) {
+    flex-direction: row-reverse;
+
+    @media(max-width: 1024px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  :nth-child(4) {
+    margin-bottom: 0;
+  }
+}
+
+//SECTION 3 - TEAM
+
+section.team {
+  padding-top: 100px;
+  max-width: 1170px;
+  margin: 0 auto;
+
+  .title-wrap {
+    flex-direction: column;
+    align-items: center;
+    max-width: 770px;
+
+    @media(max-width: 1024) {
+      max-width: none;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 28px;
+      text-align: center;
+    }
+  }
+
+  .s3-content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 250px;
+      width: 234px;
+
+      .img-person {
+        margin: 25px 0;
+      }
+
+      .person-name {
+        color: $blue;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 22px;
+      }
+
+      .person-position {
+        font-size: 15px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+// SECTION 4 - CONTACT
+
+section.contact {
+  position: relative;
+  margin: 150px 0;
+  padding: 100px 0;
+
+  @media(max-width:1024px) {
+    margin-top: 100px;
+  }
+
+  @media(max-width:768px) {
+    margin-top: 0;
+  }
+
+  .contact-content {
+    display: flex;
+
+    @media(max-width:1024px) {
+      justify-content: center;
+    }
+
+    .adress {
+      display: flex;
+      flex-direction: column;
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      span {
+        line-height: 17px;
+        padding-bottom: 17px;
+      }
+    }
+
+    .contact-img {
+      margin-left: 80px;
+
+      @media(max-width:1280px) {
+        margin-left: 40px;
+      }
+
+      @media(max-width:1024px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
