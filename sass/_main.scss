@@ -1,6 +1,7 @@
 main {
   position: relative;
-  height: 870px;
+  height: 800px;
+
 
   @media(max-width:1024px) {
     height: 100%;
@@ -63,6 +64,7 @@ main {
   }
 
   .banner-area {
+
     position: relative;
     padding: 60px 0;
 
@@ -72,6 +74,7 @@ main {
 
     .banner-content {
       padding-top: 200px;
+      // height: 200px;
 
       @media(max-width: 1024px) {
         padding-top: 100px;

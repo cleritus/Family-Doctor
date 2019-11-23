@@ -17,7 +17,7 @@
   <div class="wrap">
     <main data-section="s0">
       <img class="bg-left" src="./images/bg/bg_left.png" alt="">
-      <button class="reg-btn">e-rejestracja</button>
+
       <header>
         <div class="header-top container">
           <div class="page-logo">
@@ -25,18 +25,21 @@
             <!-- <img src="./images/icons/Logo.svg" alt="Logo Twój Lekarz Rodzinny" class="logo"> -->
           </div>
 
-          <nav class="nav-primary">
+          <div class="d-flex">
+            <nav class="nav-primary">
+              <ul class="nav-ul header-ul">
+                <li class="s0">start</li>
+                <li class="s2">usługi</li>
+                <li class="s3">zespół</li>
+                <li class="s4">kontakt</li>
+              </ul>
 
-            <ul class="nav-ul header-ul">
-              <li class="s0">home</li>
-              <li class="s2">products</li>
-              <li class="s3">team</li>
-              <li class="s4">contact</li>
-            </ul>
+              <img class="hamburger burger" src="./images/icons/burger_menu.svg" alt="Burger menu">
+              <img class="hamburger burgerDark" src="./images/icons/burger_menu_dark.svg" alt="Burger menu">
+            </nav>
 
-            <img class="hamburger burger" src="./images/icons/burger_menu.svg" alt="Burger menu">
-            <img class="hamburger burgerDark" src="./images/icons/burger_menu_dark.svg" alt="Burger menu">
-          </nav>
+            <button class="reg-btn">e-rejestracja</button>
+          </div>
         </div>
       </header>
 
@@ -64,8 +67,9 @@
             zgodnie z umową z Narodowym Funduszem Zdrowia. Wykorzystujemy naszą wiedzę , doświadczenie i serce w celu
             zapewnienia najlepszej opieki dzieciom i dorosłym .
           </p>
+
           <div class="hero-banner">
-            <img src="./images/illustration.png" alt="banner image">
+            <img src="./images/heart.jpg" alt="Hearth with stethoscope">
           </div>
         </div>
       </div>
@@ -78,13 +82,13 @@
 
       <div class="s1-content-container">
         <div class="feature-content">
-          <div class="feature-icon"><img src="./images/secure.png" alt="Padlock icon"></div>
+          <div class="feature-icon"><img src="./images/icons/nfz_icon.jpg" alt="NFZ icon"></div>
           <h4>NFZ</h4>
           <p>Krótko o świadczeniach</p>
         </div>
 
         <div class="feature-content">
-          <div class="feature-icon"> <img src="./images/legal.png" alt="Legal icon"></div>
+          <div class="feature-icon"> <img src="./images/icons/akredytacja_icon.jpg" alt="Accreditation icon"></div>
           <h4>Akredytacja POZ </h4>
           <p>Certyfikat akredytacyjny określa, iż jednostka cechuje się wysokim poziomem funkcjonowania oraz dobrą
             jakością udzielanych świadczeń.</p>
@@ -102,7 +106,7 @@
 
         <article class="article-container">
           <div class="article-row">
-            <!-- <div class="article-img"><img src="./images/bitcan_img.png" alt=""></div> -->
+            <div class="article-img"><img src="./images/team.JPG" alt=""></div>
 
             <div class="article-content">
               <h3>Świadczenia lekarza rodzinnego</h3>
@@ -114,7 +118,7 @@
           </div>
 
           <div class="article-row">
-            <div class="article-img"><img src="./images/widget_img.png" alt=""></div>
+            <div class="article-img"><img src="./images/with_cert.JPG" alt=""></div>
             <div class="article-content">
               <p>
                 <ul>
@@ -148,31 +152,27 @@
 
       <div class="s3-content-container">
         <div class="box">
-          <img class="img-person" src="./images/team/artur.png" alt="Member's photo">
-          <span class="person-name">Artur</span>
-          <span class="person-position">Cofounder</span>
-          <img src="./images/icons/linkedin-logo.svg" alt="Linkedin logo">
+          <div class="img-person"></div>
+          <!-- <img class="img-person" src="./images/team/artur.png" alt="Member's photo"> -->
+          <span class="person-name">Ania</span>
+          <span class="person-position">Lekarz</span>
         </div>
 
         <div class="box">
-          <img class="img-person" src="./images/team/kuba.png" alt="Member's photo">
-          <span class="person-name">Jakub</span>
-          <span class="person-position">Cofounder</span>
-          <img src="./images/icons/linkedin-logo.svg" alt="Linkedin logo">
+          <div class="img-person"></div>
+          <!-- <img class="img-person" src="./images/team/kuba.png" alt="Member's photo"> -->
+          <span class="person-name">Aneta</span>
+          <span class="person-position">Lekarz</span>
         </div>
 
         <div class="box">
-          <img class="img-person" src="./images/team/lukasz.png" alt="Member's photo">
-          <span class="person-name">Łukasz</span>
-          <span class="person-position">Cofounder</span>
-          <img src="./images/icons/linkedin-logo.svg" alt="Linkedin logo">
+          <div class="img-person"></div>
+          <!-- <img class="img-person" src="./images/team/lukasz.png" alt="Member's photo"> -->
+          <span class="person-name">Bożena</span>
+          <span class="person-position">Pielęgniarka</span>
         </div>
 
-        <div class="box">
-          <img class="img-person" src="./images/team/kamila.png" alt="Member's photo">
-          <span class="person-name">Kamila</span>
-          <span class="person-position">Customer Support</span>
-        </div>
+
     </section>
 
     <section data-section="s4" class="contact">
@@ -189,14 +189,17 @@
               Spółka Partnerska Lekarzy Rodzinnych
             </h4>
             <p>
-              <span>ul. Zagumienna 10 A <br>
-                  15-866 Białystok, os. Białostoczek <br>
-                  tel. 85 7333 545 <br>
-                  E-mail: twojlekarzrodzinny@gmail.com
-                </span>
+              <i class="fas fa-map-marker-alt"></i><span>ul. Zagumienna 10 A</span><br>
+              <span class="ml-20">15-866 Białystok, os. Białostoczek</span> <br>
+              <i class="fas fa-phone"></i><span>tel. 85 7333 545</span> <br>
+              <i class="far fa-envelope"></i><span>E-mail: twojlekarzrodzinny@gmail.com</span> <br>
+              <i class="far fa-clock"></i><span>poniedziałek - piątek 8:00 - 18:00</span>
             </p>
           </div>
-          <div class="contact-img"><img src="./images/mailbox_img.png" alt="Mailbox image"></div>
+
+          <div class="contact-img">
+            <img src="./images/location.jpg" alt="Location on google map">
+          </div>
         </div>
       </div>
     </section>
@@ -205,12 +208,12 @@
       <div class="footer-bg-left"></div>
       <div class="footer-container container">
         <div class="footer-top">
-          <div class="">
-            <p>Zgodnie z art. 13 ogólnego rozporządzenia Parlamentu Europejskiego  i Rady (UE) z dnia 27 kwietnia 2016
+          <div class="info">
+            <h5>Zgodnie z art. 13 ogólnego rozporządzenia Parlamentu Europejskiego  i Rady (UE) z dnia 27 kwietnia 2016
               r. o ochronie danych osobowych (Dz.U.UE L.119 z 04.05.2016, str.1) informuję, iż: administratorem
               Pani/Pana danych osobowych przetwarzanych przez Twój Lekarz Rodzinny A. Majewska, A. Zabielska-Drągowska
               Spółka Partnerska Lekarzy Rodzinnych ul. Zagumienna 10a Białytsok 15-866, tel. 857333545, e mail
-              twójlekarzrodzinny@gmail.com</p>
+              twójlekarzrodzinny@gmail.com</h5>
             <ul>
               <li>Pani/Pana dane osobowe przetwarzane będą w celu udzielania świadczeń zdrowotnych na podstawie art.
                 9 ust 2 lit h  ogólnego rozporządzenia
@@ -239,12 +242,11 @@
                 z dnia 27 kwietnia 2016 r.
               </li>
             </ul>
-
           </div>
         </div>
 
         <p>
-          <span class="copyrights">©  Twój Lekarz Rodzinny <script>document.write(new Date().getFullYear())</script></span>
+          <span class="copyrights">©  Twój Lekarz Rodzinny 2013 - <script>document.write(new Date().getFullYear())</script></span>
         </p>
       </div>
       <div class="footer-bg-right"></div>

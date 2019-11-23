@@ -75,9 +75,11 @@ button {
 }
 
 .reg-btn {
-  position: absolute;
-  top: 100px;
-  right: 50px;
+  margin-left: 30px;
+
+  @media(max-width: 1024px) {
+    margin-right: 50px;
+  }
 }
 
 button:hover {

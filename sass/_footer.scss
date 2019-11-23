@@ -2,69 +2,26 @@ footer {
   position: relative;
 
   .footer-top {
-    display: flex;
-    justify-content: space-between;
     border-bottom: 1px solid #eee;
 
-    @media(max-width: 1024px) {
-      flex-direction: column-reverse;
-    }
+    .info {
 
-    @media(max-width: 768px) {
-      .footer-ul {
-        flex-direction: column;
-        align-items: flex-start;
+
+      h5,
+      ul {
+        width: 90%;
+        margin: 0 auto;
+        text-align: justify;
+        font-size: 14px;
+      }
+
+      ul {
+        padding: 20px 0;
 
         li {
-          display: list-item;
-          margin-left: 0;
-        }
-      }
-    }
-
-    .media,
-    .media-mobile {
-      display: flex;
-      justify-content: flex-end;
-
-      img {
-        padding-left: 20px;
-      }
-
-      @media(max-width: 768px) {
-        .fb-icon {
-          padding-left: 0;
-        }
-      }
-    }
-
-    .adress-container {
-      .media-mobile {
-        display: none;
-
-        @media(max-width: 1024px) {
-          display: block;
-          padding-top: 50px;
+          line-height: 18px;
         }
 
-        @media(max-width: 768px) {
-          padding-top: 30px;
-        }
-      }
-
-      @media(max-width: 1024px) {
-        display: flex;
-        justify-content: space-between;
-      }
-
-      @media(max-width: 768px) {
-        flex-direction: column;
-      }
-    }
-
-    .media {
-      @media(max-width: 1024px) {
-        display: none;
       }
     }
   }

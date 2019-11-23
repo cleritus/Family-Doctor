@@ -15,9 +15,19 @@ header {
     justify-content: space-between;
     background-color: transparent;
 
+    .d-flex {
+      display: flex;
+      align-items: center;
 
+      @media(max-width: 1024px) {
+        flex-direction: row-reverse;
+      }
+
+    }
 
     .nav-primary {
+      display: flex;
+
       @media(max-width: 1024px) {
         padding: 37px 0;
       }
