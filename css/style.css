@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   max-width: 1920px;
   margin: 0 auto;
@@ -234,6 +235,12 @@ main .banner-area h1 {
   width: 560px;
 }
 
+@media (max-width: 1280px) {
+  main .banner-area h1 {
+    width: 40%;
+  }
+}
+
 @media (max-width: 1024px) {
   main .banner-area h1 {
     width: 90%;
@@ -255,6 +262,12 @@ main .banner-area p {
   width: 540px;
 }
 
+@media (max-width: 1280px) {
+  main .banner-area p {
+    width: 45%;
+  }
+}
+
 @media (max-width: 1024px) {
   main .banner-area p {
     width: 326px;
@@ -274,19 +287,25 @@ main .banner-area .hero-banner {
   left: 50%;
 }
 
-main .banner-area .hero-banner img {
-  width: 100%;
-}
-
 @media (max-width: 1024px) {
   main .banner-area .hero-banner {
-    top: 55%;
+    top: 45%;
   }
 }
 
 @media (max-width: 768px) {
   main .banner-area .hero-banner {
     display: none;
+  }
+}
+
+main .banner-area .hero-banner img {
+  width: 100%;
+}
+
+@media (max-width: 1060px) {
+  main .banner-area .hero-banner img {
+    width: 95%;
   }
 }
 
@@ -490,6 +509,18 @@ h2 span {
       flex-wrap: wrap;
 }
 
+@media (max-width: 1024px) {
+  .s1-content-container {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .s1-content-container {
+    margin-top: 50px;
+  }
+}
+
 .s1-content-container .feature-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -504,6 +535,7 @@ h2 span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 296px;
   margin-bottom: 30px;
 }
 
@@ -557,7 +589,7 @@ section.products {
 @media (max-width: 768px) {
   section.products {
     margin-top: 0;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
   }
 }
 
@@ -594,6 +626,12 @@ section.products .article-row .article-img {
   width: 50%;
 }
 
+@media (max-width: 1024px) {
+  section.products .article-row .article-img {
+    width: 80%;
+  }
+}
+
 section.products .article-row .article-img img {
   width: 100%;
 }
@@ -605,9 +643,8 @@ section.products .article-row .article-content {
 
 @media (max-width: 1024px) {
   section.products .article-row .article-content {
-    text-align: center;
-    max-width: 440px;
-    margin-bottom: 50px;
+    width: 80%;
+    margin-bottom: 70px;
   }
 }
 
@@ -627,8 +664,6 @@ section.products .article-row .article-content h3 {
   section.products .article-row .article-content h3 {
     font-size: 26px;
     line-height: 34px;
-    margin-top: 0;
-    margin: 0 auto;
   }
 }
 
@@ -642,6 +677,13 @@ section.products .article-row .article-content h3 {
 section.products .article-row .article-content p {
   font-size: 16px;
   line-height: 28px;
+}
+
+@media (max-width: 768px) {
+  section.products .article-row .article-content p {
+    text-align: justify;
+    line-height: 26px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -741,7 +783,8 @@ section.team .s3-content-container .box .img-person {
   width: 120px;
   height: 120px;
   border-radius: 100%;
-  background-color: cornflowerBlue;
+  background-size: cover;
+  background-position: center;
 }
 
 section.team .s3-content-container .box .person-name {
@@ -754,6 +797,23 @@ section.team .s3-content-container .box .person-name {
 section.team .s3-content-container .box .person-position {
   font-size: 15px;
   line-height: 30px;
+}
+
+section.team .s3-content-container :nth-child(1) .img-person {
+  background-image: url("../images/team/Aneta.jpg");
+}
+
+section.team .s3-content-container :nth-child(2) .img-person {
+  background-image: url("../images/team/Anna.JPG");
+  background-size: 99%;
+}
+
+section.team .s3-content-container :nth-child(3) .img-person {
+  background-image: url("../images/team/Bożena.jpg");
+}
+
+section.team .s3-content-container :nth-child(4) .img-person {
+  background-image: url("../images/team/Grażyna.jpg");
 }
 
 section.contact {
@@ -789,6 +849,7 @@ section.contact .contact-content {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 50px;
   }
 }
 

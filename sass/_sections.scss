@@ -55,11 +55,20 @@ h2 {
   justify-content: space-around;
   flex-wrap: wrap;
 
+  @media(max-width: 1024px) {
+    margin-top: 100px;
+  }
+
+  @media(max-width: 768px) {
+    margin-top: 50px;
+  }
+
   .feature-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 296px;
     margin-bottom: 30px;
 
     .feature-icon {
@@ -107,7 +116,7 @@ section.products {
 
   @media(max-width: 768px) {
     margin-top: 0;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
   }
 
   .article-row {
@@ -128,28 +137,23 @@ section.products {
     .article-img {
       width: 50%;
 
+      @media(max-width: 1024px) {
+        width: 80%;
+      }
+
       img {
         width: 100%;
       }
 
     }
 
-    // .article-img {
-    //   @media(max-width: 768px) {
-    //     img {
-    //       width: 100%;
-    //     }
-    //   }
-    // }
-
     .article-content {
       width: 470px;
       text-align: left;
 
       @media(max-width:1024px) {
-        text-align: center;
-        max-width: 440px;
-        margin-bottom: 50px;
+        width: 80%;
+        margin-bottom: 70px;
       }
 
       @media(max-width:768px) {
@@ -164,8 +168,6 @@ section.products {
         @media(max-width:768px) {
           font-size: 26px;
           line-height: 34px;
-          margin-top: 0;
-          margin: 0 auto;
         }
 
         @media(max-width:480px) {
@@ -177,6 +179,12 @@ section.products {
       p {
         font-size: 16px;
         line-height: 28px;
+
+        @media(max-width:768px) {
+          text-align: justify;
+          line-height: 26px;
+        }
+
 
         @media(max-width:480px) {
           width: 70%;
@@ -246,11 +254,11 @@ section.team {
 
       .img-person {
         margin: 25px 0;
-
         width: 120px;
         height: 120px;
         border-radius: 100%;
-        background-color: cornflowerBlue;
+        background-size: cover;
+        background-position: center;
       }
 
       .person-name {
@@ -263,6 +271,31 @@ section.team {
       .person-position {
         font-size: 15px;
         line-height: 30px;
+      }
+    }
+
+    :nth-child(1) {
+      .img-person {
+        background-image: url('../images/team/Aneta.jpg');
+      }
+    }
+
+    :nth-child(2) {
+      .img-person {
+        background-image: url('../images/team/Anna.JPG');
+        background-size: 99%;
+      }
+    }
+
+    :nth-child(3) {
+      .img-person {
+        background-image: url('../images/team/Bożena.jpg');
+      }
+    }
+
+    :nth-child(4) {
+      .img-person {
+        background-image: url('../images/team/Grażyna.jpg');
       }
     }
   }
@@ -290,6 +323,7 @@ section.contact {
 
     @media(max-width:1024px) {
       justify-content: center;
+      margin-top: 50px;
     }
 
     .adress {
