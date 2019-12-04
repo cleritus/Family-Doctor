@@ -282,20 +282,20 @@ section.team {
 
     :nth-child(2) {
       .img-person {
-        background-image: url('../images/team/Anna.JPG');
+        background-image: url('../images/team/Anna_mini.jpg');
         background-size: 99%;
       }
     }
 
     :nth-child(3) {
       .img-person {
-        background-image: url('../images/team/Bożena.jpg');
+        background-image: url('../images/team/Bozena.jpg');
       }
     }
 
     :nth-child(4) {
       .img-person {
-        background-image: url('../images/team/Grażyna.jpg');
+        background-image: url('../images/team/Grazyna.jpg');
       }
     }
   }
@@ -322,8 +322,9 @@ section.contact {
     margin-top: 100px;
 
     @media(max-width:1024px) {
-      justify-content: center;
-      margin-top: 50px;
+      flex-direction: column;
+      // justify-content: center;
+      margin-top: 20px;
     }
 
     .adress {
@@ -348,8 +349,6 @@ section.contact {
         margin-right: 20px;
       }
 
-
-
       i {
         margin-right: 10px;
         color: $blue;
@@ -365,7 +364,8 @@ section.contact {
       }
 
       @media(max-width:1024px) {
-        display: none;
+        width: 90%;
+        margin-top: 50px;
       }
 
       img {

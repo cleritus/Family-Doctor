@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   max-width: 1920px;
   margin: 0 auto;
@@ -337,6 +336,33 @@ header .header-top {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: transparent;
+}
+
+header .header-top .page-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-top .page-logo .logo {
+  height: 50px;
+}
+
+header .header-top .page-logo h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: capitalize;
+  color: #069AE0;
+  margin: 0;
+  padding-left: 5px;
+}
+
+header .header-top .page-logo h3 span {
+  letter-spacing: 3px;
 }
 
 header .header-top .d-flex {
@@ -804,16 +830,16 @@ section.team .s3-content-container :nth-child(1) .img-person {
 }
 
 section.team .s3-content-container :nth-child(2) .img-person {
-  background-image: url("../images/team/Anna.JPG");
+  background-image: url("../images/team/Anna_mini.jpg");
   background-size: 99%;
 }
 
 section.team .s3-content-container :nth-child(3) .img-person {
-  background-image: url("../images/team/Bożena.jpg");
+  background-image: url("../images/team/Bozena.jpg");
 }
 
 section.team .s3-content-container :nth-child(4) .img-person {
-  background-image: url("../images/team/Grażyna.jpg");
+  background-image: url("../images/team/Grazyna.jpg");
 }
 
 section.contact {
@@ -846,10 +872,11 @@ section.contact .contact-content {
 
 @media (max-width: 1024px) {
   section.contact .contact-content {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-top: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 20px;
   }
 }
 
@@ -899,7 +926,8 @@ section.contact .contact-content .contact-img {
 
 @media (max-width: 1024px) {
   section.contact .contact-content .contact-img {
-    display: none;
+    width: 90%;
+    margin-top: 50px;
   }
 }
 
