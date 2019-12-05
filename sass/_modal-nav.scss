@@ -1,5 +1,4 @@
 .modal-bg {
-  // display: block;
   display: none;
   width: 100vw;
   height: 100vh;
@@ -17,13 +16,10 @@
     padding: 30px 0;
     height: 50%;
 
-
-
-
     .modal-flex {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-end;
 
       .burger-exit {
         cursor: pointer;
@@ -37,7 +33,6 @@
       justify-content: space-around;
       height: 60%;
       color: $white;
-      // padding-top: 50px;
 
       li {
         margin: 0;

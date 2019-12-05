@@ -53,20 +53,19 @@ body {
 li {
   text-transform: capitalize;
   list-style: none;
-  // font-size: 18px;
   line-height: 26px;
 }
 
 button {
-  height: 45px;
-  width: 160px;
+  height: 40px;
+  width: 150px;
   border: none;
   border-radius: 4px;
   background: linear-gradient(270deg, #0565FF 0%, #0442DF 100%);
   box-shadow: 0 3px 10px 0 rgba(67, 109, 216, 0.25);
   color: $white;
   font-family: 'Roboto', sans-serif;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 13px;
   letter-spacing: 0.65px;
   line-height: 16px;
@@ -78,7 +77,13 @@ button {
   margin-left: 30px;
 
   @media(max-width: 1024px) {
-    margin-right: 50px;
+    margin: 0 30px;
+  }
+
+  @media(max-width: 768px) {
+    height: 30px;
+    width: 120px;
+
   }
 }
 

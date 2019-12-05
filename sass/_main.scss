@@ -120,12 +120,19 @@ main {
 
       @media(max-width: 1024px) {
         width: 326px;
+        font-size: 14px;
+        line-height: 22px;
       }
 
       @media(max-width: 768px) {
         width: 100%;
-        text-align: center;
+        text-align: justify;
       }
+
+      // @media(max-width: 400px) {
+      //   font-size: 13px;
+      //   line-height: 18px;
+      // }
     }
 
     .hero-banner {

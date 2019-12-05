@@ -81,6 +81,11 @@ h2 {
       background-color: #FFFFFF;
       box-shadow: 0 10px 35px 0 rgba(26, 55, 139, 0.1);
 
+      @media(max-width:768px) {
+        height: 100px;
+        width: 100px;
+      }
+
       img {
         width: 80%;
       }
@@ -103,6 +108,15 @@ h2 {
       font-size: 14px;
       line-height: 24px;
       text-align: center;
+
+      @media(max-width:768px) {
+        line-height: 20px;
+      }
+
+      @media(max-width:540px) {
+        font-size: 13px;
+        line-height: 18px;
+      }
     }
   }
 }
@@ -152,7 +166,7 @@ section.products {
       text-align: left;
 
       @media(max-width:1024px) {
-        width: 80%;
+        width: 80vw;
         margin-bottom: 70px;
       }
 
@@ -173,6 +187,7 @@ section.products {
         @media(max-width:480px) {
           width: 70%;
           margin: 0px auto;
+          padding-bottom: 30px;
         }
       }
 
@@ -181,24 +196,27 @@ section.products {
         line-height: 28px;
 
         @media(max-width:768px) {
+          width: 100%;
           text-align: justify;
-          line-height: 26px;
-        }
-
-
-        @media(max-width:480px) {
-          width: 70%;
-          margin: 20px auto;
-        }
-
-        @media(max-width:360px) {
-          width: 50%;
+          font-size: 14px;
+          line-height: 22px;
         }
       }
 
       ul {
+        @media(max-width:540px) {
+          padding: 20px;
+        }
+
         li {
           list-style: circle;
+
+          @media(max-width:768px) {
+            width: 100%;
+            text-align: justify;
+            font-size: 14px;
+            line-height: 22px;
+          }
         }
       }
     }
@@ -237,6 +255,19 @@ section.team {
       font-size: 16px;
       line-height: 28px;
       text-align: center;
+
+      @media(max-width: 1024px) {
+        width: 60vw;
+        font-size: 14px;
+        line-height: 22px;
+      }
+
+      @media(max-width: 768px) {
+        width: 100%;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: justify;
+      }
     }
   }
 
@@ -323,7 +354,6 @@ section.contact {
 
     @media(max-width:1024px) {
       flex-direction: column;
-      // justify-content: center;
       margin-top: 20px;
     }
 
@@ -334,11 +364,21 @@ section.contact {
       h4 {
         margin-bottom: 0;
         line-height: 25px;
+
+        @media(max-width: 540px) {
+          font-size: 14px;
+          line-height: 20px;
+        }
       }
 
       span {
         line-height: 25px;
         padding-bottom: 17px;
+
+        @media(max-width: 540px) {
+          font-size: 14px;
+          line-height: 20px;
+        }
       }
 
       .ml-20 {

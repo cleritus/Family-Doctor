@@ -6,13 +6,16 @@ footer {
 
     .info {
 
-
       h5,
       ul {
         width: 90%;
         margin: 0 auto;
         text-align: justify;
         font-size: 14px;
+
+        @media(max-width: 768px) {
+          font-size: 10px;
+        }
       }
 
       ul {
