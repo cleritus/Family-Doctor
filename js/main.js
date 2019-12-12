@@ -7,26 +7,18 @@ const headerDisplayNone = $('.header-ul').css('display');
 
 // Nav - Scroll to section
 
-let sectionActive = '';
-
 $('li').on('click', function () {
   const sectionName = $(this).attr('class');
 
   if (sectionName != 's0') {
+    modalBg.style.display = 'none';
+    $(header).removeClass('activeHead');
+    header.classList.remove('hideHead');
 
-    if (sectionActive === sectionName) {
-      return console.log('You are in the section you click');
-    } else {
-      modalBg.style.display = 'none';
-      $(header).removeClass('activeHead');
-      header.classList.remove('hideHead');
+    $('body, html').animate({
+      scrollTop: $(`[data-section = ${sectionName}]`).offset().top + 30
+    })
 
-      $('body, html').animate({
-        scrollTop: $(`[data-section = ${sectionName}]`).offset().top + 40
-      })
-
-      sectionActive = sectionName;
-    }
   } else {
     modalBg.style.display = 'none';
     $(header).removeClass('activeHead');
@@ -79,42 +71,3 @@ const closeMenu = () => {
 hamburger.addEventListener('click', openMenu);
 burgerDark.addEventListener('click', openMenu);
 burgerExit.addEventListener('click', closeMenu);
-
-// Error when empty input
-
-// const inputs = [...document.querySelectorAll('.input')];
-// const submitBtn = document.querySelector('.submit-btn');
-
-// const onSubmitForm = (e) => {
-//   e.preventDefault();
-
-//   let validationError = false;
-//   inputs.forEach(input => {
-//     if (input.value === '') {
-//       input.classList.add('empty-input');
-//       validationError = true;
-//       return;
-//     }
-
-//     input.classList.remove('empty-input');
-//   });
-
-//   if (validationError) {
-//     return;
-//   }
-
-// $.post('http://litpay.pl/send.php', $('.contact-form').serialize())
-//   .done(function (result) {
-//     document.querySelector('.form').style.display = 'none';
-//     document.querySelector('.success-msg').classList.add('show');
-//     document.querySelector('.contact-img').classList.toggle('hide');
-//     document.querySelector('.contact-content').style.alignItems = 'center';
-//   })
-//   .fail(function (result) {
-//     alert("Oops, something wrong. Can't send your message ");
-//   });
-// };
-
-// submitBtn.addEventListener('click', onSubmitForm);
-
-// inputs.forEach(input => input.addEventListener('keydown', () => input.classList.remove('empty-input')));

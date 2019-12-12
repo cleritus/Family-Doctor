@@ -128,11 +128,6 @@ main {
         width: 100%;
         text-align: justify;
       }
-
-      // @media(max-width: 400px) {
-      //   font-size: 13px;
-      //   line-height: 18px;
-      // }
     }
 
     .hero-banner {
@@ -141,7 +136,7 @@ main {
       left: 50%;
 
       @media(max-width: 1024px) {
-        top: 45%;
+        top: 50%;
       }
 
       @media(max-width: 768px) {

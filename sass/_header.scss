@@ -23,8 +23,21 @@ header {
       display: flex;
       align-items: center;
 
-      .logo {
-        height: 50px;
+      .logo-full {
+        height: 65px;
+
+        @media(max-width: 768px) {
+          display: none;
+        }
+      }
+
+      .logo-mobile {
+        display: none;
+
+        @media(max-width: 768px) {
+          display: block;
+          height: 50px;
+        }
       }
 
       h3 {
@@ -119,7 +132,7 @@ header {
   }
 
   li:hover {
-    color: $blue;
+    color: $hoverMenu;
     border-color: $hoverMenu;
   }
 }
@@ -132,7 +145,7 @@ header {
 
 .activeHead {
   background-color: $white;
-  height: 55px;
+  height: 70px;
   box-shadow: 0 5px 5px 0 rgba(138, 138, 138, 0.1);
 }
 
