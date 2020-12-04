@@ -4,7 +4,7 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #7E879F;
   cursor: default;
 }
@@ -61,7 +61,6 @@ body {
 }
 
 li {
-  text-transform: capitalize;
   list-style: none;
   line-height: 26px;
 }
@@ -71,12 +70,12 @@ button {
   width: 150px;
   border: none;
   border-radius: 4px;
-  background: -webkit-gradient(linear, right top, left top, from(#0565FF), to(#0442DF));
-  background: linear-gradient(270deg, #0565FF 0%, #0442DF 100%);
+  background: -webkit-gradient(linear, right top, left top, from(#0565ff), to(#0442df));
+  background: linear-gradient(270deg, #0565ff 0%, #0442df 100%);
   -webkit-box-shadow: 0 3px 10px 0 rgba(67, 109, 216, 0.25);
           box-shadow: 0 3px 10px 0 rgba(67, 109, 216, 0.25);
   color: #ffffff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-transform: capitalize;
   font-size: 13px;
   letter-spacing: 0.65px;
@@ -103,15 +102,15 @@ button {
 }
 
 button:hover {
-  background: -webkit-gradient(linear, right top, left top, from(#72A8FF), to(#3165EA));
-  background: linear-gradient(270deg, #72A8FF 0%, #3165EA 100%);
+  background: -webkit-gradient(linear, right top, left top, from(#72a8ff), to(#3165ea));
+  background: linear-gradient(270deg, #72a8ff 0%, #3165ea 100%);
 }
 
 h1,
 h2,
 h3 {
   color: #0a9add;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 h4 {
@@ -329,8 +328,8 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 2;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 @media (max-width: 768px) {
@@ -384,7 +383,7 @@ header .header-top .page-logo .logo-mobile {
 }
 
 header .header-top .page-logo h3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: capitalize;
@@ -444,6 +443,7 @@ header .header-top .nav-primary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 @media (max-width: 1024px) {
@@ -459,6 +459,11 @@ header .header-top .nav-primary {
 }
 
 header .header-top .nav-primary .hamburger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   display: none;
   height: 20px;
   width: 26px;
@@ -473,7 +478,8 @@ header .header-top .nav-primary .hamburger {
 }
 
 @media (max-width: 1024px) {
-  header .header-top .nav-primary .burger {
+  header .header-top .nav-primary .burger,
+  header .header-top .nav-primary .burgerDark {
     display: block;
   }
 }
@@ -490,9 +496,10 @@ header .header-top .nav-primary .hamburger {
   font-size: 18px;
   margin-left: 50px;
   border-bottom: 2px solid transparent;
+  text-transform: capitalize;
   cursor: pointer;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .nav-ul :nth-child(1) {
@@ -578,7 +585,7 @@ h2 span {
   height: 100%;
   -webkit-transform: rotate(-5deg);
           transform: rotate(-5deg);
-  background-color: #F8F9FF;
+  background-color: #f8f9ff;
   z-index: -1;
 }
 
@@ -635,7 +642,7 @@ h2 span {
   height: 140px;
   width: 140px;
   border-radius: 10px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   -webkit-box-shadow: 0 10px 35px 0 rgba(26, 55, 139, 0.1);
           box-shadow: 0 10px 35px 0 rgba(26, 55, 139, 0.1);
 }
@@ -966,6 +973,9 @@ section.contact .contact-content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 100px;
 }
 
@@ -1014,7 +1024,7 @@ section.contact .contact-content .adress span {
 }
 
 section.contact .contact-content .adress .ml-20 {
-  margin-left: 22px;
+  margin-left: 25px;
 }
 
 section.contact .contact-content .adress :nth-child(2) {
@@ -1024,6 +1034,10 @@ section.contact .contact-content .adress :nth-child(2) {
 section.contact .contact-content .adress i {
   margin-right: 10px;
   color: #0a9add;
+}
+
+section.contact .contact-content .adress .adress-list {
+  padding-left: 0;
 }
 
 section.contact .contact-content .contact-img {

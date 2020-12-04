@@ -35,25 +35,19 @@ $('li').on('click', function () {
 $(document).on('scroll', function () {
   const scrollPosition = $(this).scrollTop();
   const headerHeight = $(header).outerHeight();
-  let isActive = 0;
   const headerDisplayNone = $('.header-ul').css('display');
 
-  if ((scrollPosition > headerHeight / 2) && (isActive === 0)) {
+  if (scrollPosition > headerHeight / 2) {
     $(header).addClass('activeHead');
-    hamburger.style.display = 'none';
 
     if (headerDisplayNone === 'none') {
       burgerDark.style.display = 'block';
     }
-
-    isActive = 1;
   }
 
   if (scrollPosition < headerHeight / 2) {
     $(header).removeClass('activeHead');
-    hamburger.style.display = 'block';
     burgerDark.style.display = 'none';
-    isActive = 0;
   }
 })
 
